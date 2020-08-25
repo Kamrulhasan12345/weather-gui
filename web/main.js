@@ -8,7 +8,8 @@ input.addEventListener("keyup", function(event) {
     // Cancel the default action, if needed
     event.preventDefault();
     // Trigger the button element with a click
-    document.getElementById("button").click();
+    // document.getElementById("button").click();
+    getWeather();
   }
 });
 
