@@ -8,17 +8,16 @@ input.addEventListener("keyup", function(event) {
     // Cancel the default action, if needed
     event.preventDefault();
     // Trigger the button element with a click
-    // document.getElementById("button").click();
-    getWeather();
+    document.getElementById("button").click();
   }
 });
 
 function getWeather() {
     var data = document.getElementById("data").value
-    eel.get_weather(data)(setImage)
+    eel.get_weather(data)(setAlert)
 }
 
-function setImage(string) {
+function setAlert(string) {
 	//document.getElementById("data1").value = string
 	al(string);
 }
