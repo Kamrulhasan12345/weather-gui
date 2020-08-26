@@ -1,11 +1,9 @@
 <h1>WeaChecker</h1>
 <h2>How to use</h2>
-<p>This is built on python eel and electron. So you need python and Eel and node.js installed on your device. But the python file needs some other files. You can install them with the following command (including eel):
+<p>This is built on python eel. So you need python installed on your device. But the python file needs some other files. You can install them with the following command (including eel):
   <pre>pip install pytemperature</pre>
   <pre>pip install eel</pre>
   <pre>pip install requests</pre>
- and next you'll need to install some node modules. You can install them by using this command:
-  <pre>npm install</pre>
  After installing all of them. Just run this command: <pre>python WeaChecker.py</pre> and it'll work!</p>
  
  <h2>Contribution</h2>
