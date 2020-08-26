@@ -14,8 +14,8 @@ def get_weather(city):
        response = json.loads(r.content)
        temp = response['main']['temp']
        desc = response['weather'][0]['description']
-
-       return "It's " + str(desc) + " in " + city.capitalize() + ", with a temperature of " + str(pytemperature.c2f(temp)) +"° Farenheit."
+       name = response['name']
+       return "It's " + str(desc) + " in " + str(name) + ", with a temperature of " + str(pytemperature.c2f(temp)) +"° Farenheit."
     else:
        return "Please enter a valid city"
 
